@@ -167,7 +167,30 @@ footer {
       "content"
       "footer";
   }
+}
 
+@media (min-width: 375px){
+  input[type=text], input[type=email], input[type=number], select, textarea, #comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  input[type=radio], input[type=checkbox] {
+    margin-left: 15%;
+  }
+  #radio-label{
+    margin-left: 0px;
+  }
+  .container{
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "header"
+      "advert"
+      "content"
+      "footer";
+  }
 }
 
 @media (min-width: 700px){
